@@ -1,6 +1,4 @@
-Aqui está um exemplo de um `README.md` explicando como rodar o Docker e realizar um GET na rota `127.0.0.1/api/getMovementRanking` com ou sem o parâmetro `$movementName`:
 
----
 
 # Movement Ranking API
 
