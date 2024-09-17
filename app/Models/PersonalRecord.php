@@ -7,6 +7,7 @@
 namespace App\Models;
 
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -25,7 +26,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class PersonalRecord extends Model
 {
-	protected $table = 'personal_record';
+    use HasFactory;
+
+    protected $table = 'personal_record';
 	public $timestamps = false;
 
 	protected $casts = [
