@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class PersonalRecordSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class PersonalRecordSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('personal_record')->insert([
+        DB::table('personal_record')->insertOrIgnore([
             ['id' => 1, 'user_id' => 1, 'movement_id' => 1, 'value' => 100.0, 'date' => '2021-01-01 00:00:00'],
             ['id' => 2, 'user_id' => 1, 'movement_id' => 1, 'value' => 180.0, 'date' => '2021-01-02 00:00:00'],
             ['id' => 3, 'user_id' => 1, 'movement_id' => 1, 'value' => 150.0, 'date' => '2021-01-03 00:00:00'],

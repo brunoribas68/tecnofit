@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('personal_record', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(User::class);
-            $table->foreignIdFor(Movement::class);
+            $table->foreignIdFor(User::class, 'user_id');
+            $table->foreignIdFor(Movement::class, 'movement_id');
             $table->float('value');
-            $table->timestamps('date', 0);
+            $table->datetime('date', 0);
         });
     }
 

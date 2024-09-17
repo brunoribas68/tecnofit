@@ -34,9 +34,11 @@ class MovementController extends Controller
         if($request->has('movementName')){
             $movements = [['name' => $request->movementName]];
         }
-            foreach ($movements as $movement) {
-                $ranking[] = $this->getRankingByMovement($movement['name']);
-            }
+
+        foreach ($movements as $movement) {
+            $ranking[] = $this->getRankingByMovement($movement['name']);
+        }
+
         return $ranking;
     }
 }

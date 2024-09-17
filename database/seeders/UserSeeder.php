@@ -13,7 +13,7 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('user')->insert([
+        DB::table('user')->insertOrIgnore([
             ['id' => 1, 'name' => 'Joao'],
             ['id' => 2, 'name' => 'Jose'],
             ['id' => 3, 'name' => 'Paulo'],

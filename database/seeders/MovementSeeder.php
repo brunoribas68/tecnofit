@@ -13,7 +13,7 @@ class MovementSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('movement')->insert([
+        DB::table('movement')->insertOrIgnore([
             ['id' => 1, 'name' => 'Deadlift'],
             ['id' => 2, 'name' => 'Back Squat'],
             ['id' => 3, 'name' => 'Bench Press'],
