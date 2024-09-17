@@ -21,8 +21,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 ### 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://https://github.com/brunoribas68/tecnofit
+cd tecnofit
 ```
 
 ### 2. Configure o `.env`
@@ -51,7 +51,7 @@ Este comando irá:
 Após o ambiente estar em execução, você precisa rodar as migrações para criar as tabelas no banco de dados:
 
 ```bash
-docker exec -it app_container_name bash
+docker exec -it laravel bash
 php artisan migrate
 ```
 
